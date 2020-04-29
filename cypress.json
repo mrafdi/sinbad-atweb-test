@@ -21,7 +21,7 @@
   "screenshotsFolder": "cypress/screenshots",
   "supportFile": "cypress/support",
   "taskTimeout": 60000,
-  "testFiles": "**/*.js",
+  "testFiles": "**/*.feature",
   "trashAssetsBeforeRuns": true,
   "userAgent": "Testing",
   "video": false,

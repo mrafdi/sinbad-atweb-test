@@ -15,7 +15,19 @@
 /**
  * @type {Cypress.PluginConfig}
  */
+// module.exports = (on, config) => {
+//   // `on` is used to hook into various events Cypress emits
+//   // `config` is the resolved Cypress config
+// }
+
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+  on('file:preprocessor', cucumber())
+
+  config.env = config.env || {}
+  config.env.PHPTRAVEL_URL = process.env.PHPTRAVEL_URL
+  config.env.EMAIL_PHPTRAVEL = process.env.EMAIL_PHPTRAVEL
+  config.env.PASSWORD_PHPTRAVEL = process.env.AGENT_ADMIN_PASSWORD
+
+  return config
+
 }
