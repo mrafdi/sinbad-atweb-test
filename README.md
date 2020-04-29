@@ -45,13 +45,13 @@ Here is the example for the Search City test case:
 ```
 
 For the reporting I use the Cypress Desktop/Dashboard. So after each run using `npm run test`, the result is uploaded to my Cypress Project. The report can also be viewed by login to Cypress website and go to https://dashboard.cypress.io/projects/mj1hti/runs (this is my own Cypress dashboard)
-    ![cypress-report](cypress/img/cypress report.png)
+    ![cypress-report](cypress/img/cypress-report.png)
 
 For the [Good to Have] the Cypress Window has the setup to choose which browser do you want to use to run the test. The weakness is Cypress only show the list of browsers in your machine. Unfortunately for the command line, it somehow won't work with windows by using `--browser chrome`
-    ![cypress-browser-select](cypress/img/cypress window browser select.png)
+    ![cypress-browser-select](cypress/img/cypress-window-browser-select.png)
     The Electron is browser built-in by Cypress
 
 And for the result. All of my tests failed successfully, and I still can't find the solution of the problem.
     ![cypress-error](cypress/img/cypress error.png)
-    ![cypress-browser-select](cypress/img/cypress error2.png)
+    ![cypress-browser-select](cypress/img/cypress-error2.png)
 That's all I got. I'm sorry
