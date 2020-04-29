@@ -22,6 +22,12 @@ $ npm run cypress -- -e TAGS='@test'                | Only scenario with tag @te
 $ npm run cypress -- -e TAGS='' --browser chrome    | Launch the browser (unfortunately somehow cannot run in windows)
 $ npm run cypress-ui                                | Open the Cypress Desktop from node_modules
 ```
+### Cypress Window
+
+When you run `$ npm run cypress-ui` the Cypress Window will open.
+    ![cypress-window](cypress/img/cypress-window.png)
+
+Here you can see all menus, all features (here I use cucumber) and browser selection (top right). You can run all test or run per file simply by clicking on the feature file.
 
 ### About the assignment
 
@@ -49,9 +55,10 @@ For the reporting I use the Cypress Desktop/Dashboard. So after each run using `
 
 For the [Good to Have] the Cypress Window has the setup to choose which browser do you want to use to run the test. The weakness is Cypress only show the list of browsers in your machine. Unfortunately for the command line, it somehow won't work with windows by using `--browser chrome`
     ![cypress-browser-select](cypress/img/cypress-window-browser-select.png)
-    The Electron is browser built-in by Cypress
+
+The Electron is browser built-in by Cypress
 
 And for the result. All of my tests failed successfully, and I still can't find the solution of the problem.
-    ![cypress-error](cypress/img/cypress error.png)
+    ![cypress-error](cypress/img/cypress-error.png)
     ![cypress-browser-select](cypress/img/cypress-error2.png)
 That's all I got. I'm sorry
