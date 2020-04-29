@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "clean-reports": "rm -rf cypress/reports/results/*.json cypress/reports/features cypress/reports/index.html cypress/reports/* cypress/screenshots/* cypress/videos/*",
-    "test": "npm run clean-reports & ./node_modules/.bin/cypress-tags run --spec \"cypress/integration/*.feature\" --record --key 9da0fa1f-ff4d-479b-93b9-27a9ba421a30",
-    "cypress": "npm run clean-reports & ./node_modules/.bin/cypress-tags run --spec \"cypress/integration/*.feature\"",
-    "cypress-ui": "cypress open",
+    "test": "./node_modules/.bin/cypress-tags run --spec \"cypress/integration/*.feature\" --record --key 9da0fa1f-ff4d-479b-93b9-27a9ba421a30",
+    "cypress": "./node_modules/.bin/cypress-tags run --spec \"cypress/integration/*.feature\"",
+    "cypress-ui": "./node_modules/.bin/cypress open",
     "cy:run": "cypress run",
+    "cypress-clearcache": "cypress cache clear",
+    "cypress-verify": "cypress verify",
     "reports": "node cypress/cypress_report.js",
     "open-reports": "open 'cypress/reports/index.html'"
   },
@@ -24,9 +26,8 @@
   },
   "homepage": "https://github.com/mrafdi/sinbad-atweb-test#readme",
   "devDependencies": {
-    "cypress": "^4.2.0",
-    "cypress-cucumber-preprocessor": "^2.0.1",
-    "cypress-file-upload": "^4.0.4",
+    "cypress": "^4.5.0",
+    "cypress-cucumber-preprocessor": "^2.3.1",
     "dotenv": "^8.2.0",
     "multiple-cucumber-html-reporter": "^1.16.0"
   },

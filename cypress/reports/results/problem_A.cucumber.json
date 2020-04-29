@@ -1,0 +1,166 @@
+[
+  {
+    "description": "Steps for Problem A for Sinbad Test",
+    "keyword": "Feature",
+    "name": "Problem A - Guest User actions in PHPtravel website",
+    "line": 2,
+    "id": "problem-a---guest-user-actions-in-phptravel-website",
+    "tags": [
+      {
+        "name": "@problemA",
+        "line": 1
+      }
+    ],
+    "uri": "problem_A.feature",
+    "elements": [
+      {
+        "id": "problem-a---guest-user-actions-in-phptravel-website;as-a-guest-user,-i-should-be-able-to-search-hotels-in-a-city",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "As a Guest User, I should be able to search Hotels in a City",
+        "tags": [
+          {
+            "name": "@problemA",
+            "line": 1
+          },
+          {
+            "name": "@guestUser",
+            "line": 6
+          },
+          {
+            "name": "@useCase1",
+            "line": 6
+          },
+          {
+            "name": "@searchName",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I go to PHPtravel homepage",
+            "result": {
+              "status": "failed",
+              "duration": 4006000000,
+              "error_message": "Uncaught TypeError: Cannot read property 'remove' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at https://www.phptravels.net/home:25:48"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I input \"surabaya\" in search destination field",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click the add Child button once",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click the Search button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I can see the result of Hotels list in \"surabaya\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "problem-a---guest-user-actions-in-phptravel-website;as-a-guest-user,-i-should-be-able-to-search-hotels-in-a-city",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "As a Guest User, I should be able to search Hotels in a City",
+        "tags": [
+          {
+            "name": "@problemA",
+            "line": 1
+          },
+          {
+            "name": "@guestUser",
+            "line": 6
+          },
+          {
+            "name": "@useCase1",
+            "line": 6
+          },
+          {
+            "name": "@searchName",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I go to PHPtravel homepage",
+            "result": {
+              "status": "failed",
+              "duration": 6845000000,
+              "error_message": "Uncaught SyntaxError: Unexpected token ','\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I input \"bandung\" in search destination field",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click the add Child button once",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click the Search button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I can see the result of Hotels list in \"bandung\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
 //
@@ -12,13 +11,8 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-/**
- * @type {Cypress.PluginConfig}
- */
-// module.exports = (on, config) => {
-//   // `on` is used to hook into various events Cypress emits
-//   // `config` is the resolved Cypress config
-// }
+const cucumber = require('cypress-cucumber-preprocessor').default
+require('dotenv').config()
 
 module.exports = (on, config) => {
   on('file:preprocessor', cucumber())
@@ -29,5 +23,4 @@ module.exports = (on, config) => {
   config.env.PASSWORD_PHPTRAVEL = process.env.AGENT_ADMIN_PASSWORD
 
   return config
-
 }
