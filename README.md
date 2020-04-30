@@ -18,7 +18,7 @@ If the 'cp' command cannot run, just make a .env file and copy-paste from .env.e
 
 ```sh
 $ npm run cypress                                   | All test
-$ npm run cypress -- -e TAGS='@test'                | Only scenario with tag @test (somehow cannot run this command)
+$ npm run cypress -- -e TAGS='@test'                | Only scenario with tag @test (somehow cannot run this command in windows)
 $ npm run cypress -- -e TAGS='' --browser chrome    | Launch the browser (unfortunately somehow cannot run in windows)
 $ npm run cypress-ui                                | Open the Cypress Desktop from node_modules
 ```
@@ -58,7 +58,7 @@ For the [Good to Have] the Cypress Window has the setup to choose which browser 
 
 The Electron is browser built-in by Cypress
 
-And for the result. All of my tests failed successfully, and I still can't find the solution of the problem.
+And for the result. All of my tests failed, and I still can't find the solution of the problem.
     ![cypress-error](cypress/img/cypress-error.png)
     ![cypress-browser-select](cypress/img/cypress-error2.png)
-That's all I got. I'm sorry
+That's all I got. I apologize I cannot make it running fine as I want
